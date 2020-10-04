@@ -16,7 +16,7 @@ function Poke() {
       const pokeRepo = await fetchData();
       setRepoData(pokeRepo);
     } catch {
-      setError("Error ดึง api ไอ้ออก!! ");
+      setError("Error fetchData");
     }
     setLoading(false);
   };
